@@ -4,26 +4,7 @@ Changes
 =======
 
 
-0.3.0 (*2019-08-11*)
-====================
-
-- Support drawing tasks in left-to-right layout using `--horizontal` or `-h` option
-
-
-0.2.0 (*2019-07-27*)
-====================
-
-- Support drawing tasks in execution order using `--reverse` option
-
-
-0.1.1 (*2018-07-10*)
-====================
-
-- improve description given by `doit help graph`
-- print name of generated file
-
-
-0.1.0 (*2018-07-07*)
+0.1.0 (*2024-03-24*)
 ====================
 
 - initial release

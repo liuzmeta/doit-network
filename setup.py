@@ -4,20 +4,20 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name = 'doit-graph',
+    name = 'doit-network',
     description = "doit cmd plugin: create task's dependency-graph image",
-    version = '0.3.0',
+    version = '0.1.0',
     license = 'MIT',
-    author = 'Eduardo Naufel Schettino',
-    url = 'http://github.com/pydoit/doit-graph',
+    author = 'Zhu Liu',
+    url = 'https://github.com/liuzmeta/doit-network',
     long_description=long_description,
     long_description_content_type="text/markdown",
 
-    py_modules=['doit_graph'],
-    install_requires = ['doit', 'pygraphviz'],
+    py_modules=['doit_network'],
+    install_requires = ['doit', 'networkx'],
     entry_points = {
         'doit.COMMAND': [
-            'graph = doit_graph:GraphCmd'
+            'network = doit_network:NetowrkCmd'
         ]
     },
 
@@ -34,5 +34,5 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Intended Audience :: Developers',
     ),
-    keywords = "doit graph graphviz",
+    keywords = "doit graph network",
 )

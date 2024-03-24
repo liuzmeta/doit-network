@@ -1,7 +1,7 @@
 
-# doit-graph
+# doit-network
 
-Generates a graph (using graphviz's dot) of [doit](http://pydoit.org) tasks.
+Generates a graph (using networkx) of [doit](http://pydoit.org) tasks.
 
 Sample for [doit tutorial](http://pydoit.org/tutorial_1.html) tasks:
 
@@ -10,42 +10,18 @@ Sample for [doit tutorial](http://pydoit.org/tutorial_1.html) tasks:
 
 ## install
 
-pip install doit-graph
+pip install doit-network
 
 
 ## usage
 
 ```
-$ doit graph
-$ dot -Tpng tasks.dot -o tasks.png
+$ doit network
 ```
 
 - By default sub-tasks are hidden. Use option `--show-subtasks` to display them.
-
 - By default all tasks are included in graph.
   It is possible to specify which tasks should be included in the graph (note dependencies will be automatically included).
-
-- To draw tasks in execution order (i.e. reverse of dependency direction), use option `--reverse`
-
-```
-$ doit graph --reverse
-```
-
-- To draw tasks from left-to-right instead of the default top-to-bottom, use option `--horizontal` or `-h`
-
-```
-$ doit graph --horizontal
-```
-
-### legend
-
-![Legend](/legend.png)
-
-- group-tasks have double bondary border in the node
-- `task-dep` arrow have a solid head
-- `setup-task` arrow have an empty head
-
-
 
 ### limitations
 
@@ -53,6 +29,3 @@ $ doit graph --horizontal
 
 
 
-## DEV notes
-
-http://graphviz.org/doc/info/attrs.html
